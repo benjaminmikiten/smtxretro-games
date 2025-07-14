@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  jekyll:
+    build: .
+    ports:
+      - "4000:4000"
+      - "35729:35729" # Live reload port
+    volumes:
+      - .:/site
+      - /site/_site
+      - /site/.jekyll-cache
+    environment:
+      - JEKYLL_ENV=development
+    command: jekyll serve --host 0.0.0.0 --port 4000 --livereload --livereload-port 35729

@@ -63,7 +63,7 @@ if (contactForm) {
         
         // Simulate API call
         setTimeout(() => {
-            alert('Thank you for your message! We\'ll get back to you soon.');
+            alert('Thank you for your message! I\'ll get back to you soon.');
             this.reset();
             submitButton.textContent = originalText;
             submitButton.disabled = false;
@@ -89,10 +89,10 @@ if (ctaButton) {
 window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (window.scrollY > 100) {
-        header.style.background = 'rgba(102, 126, 234, 0.95)';
+        header.style.background = 'rgba(68, 71, 90, 0.95)';
         header.style.backdropFilter = 'blur(10px)';
     } else {
-        header.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+        header.style.background = '#44475a';
         header.style.backdropFilter = 'none';
     }
 });
@@ -114,7 +114,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.service-card, .about, .contact');
+    const animatedElements = document.querySelectorAll('.service-card, .equipment, .pricing, .contact');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';

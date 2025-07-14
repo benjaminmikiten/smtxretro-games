@@ -1,0 +1,55 @@
+# Site settings
+title: Retro Game Repair Services
+description: Professional retro game console repair and modification services in San Marcos, TX
+url: "https://retrogamerepair.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  _layouts:
+    output: false
+  _includes:
+    output: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - Dockerfile
+  - docker-compose.yml
+  - .dockerignore
+  - Makefile
+  - package.json
+  - package-lock.json
+  - README.md
+  - .git/
+  - .github/
+  - .gitignore
+  - .jekyll-cache/
+  - _site/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

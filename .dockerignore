@@ -1,0 +1,26 @@
+# Jekyll build artifacts
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Documentation
+README.md
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp 
